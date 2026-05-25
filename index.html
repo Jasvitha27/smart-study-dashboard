@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Study Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>Smart Study Dashboard</h1>
+    <button id="theme-toggle">🌙</button>
+    <div id="clock"></div>
+
+    <!-- TOP SECTION -->
+    <div class="top-section">
+
+      <!-- TIMER -->
+      <div class="card timer-card">
+        <h2>Pomodoro Timer</h2>
+
+        <div class="timer">
+         <span id="minutes">25</span>:<span id="seconds">00</span>
+        </div>
+
+        <div class="buttons">
+          <button id="start">Start</button>
+          <button id="pause">Pause</button>
+          <button id="reset">Reset</button>
+        </div>
+      </div>
+
+      <!-- DAILY GOALS -->
+      <div class="card goals-card">
+        <h2>Daily Goals</h2>
+
+        <input type="text" id="task-input" placeholder="Add task">
+
+        <button id="add-task-btn">Add Task</button>
+
+        <ul id="task-list">
+          <li>Complete DSA Sheet</li>
+          <li>Study JavaScript</li>
+        </ul>
+        <div class="task-stats">
+          <p id="total-tasks">Total tasks: 0</p>
+          <p id="task-counter">Completed: 0</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- QUOTE SECTION -->
+    <div class="card quote-card">
+      <h2>Motivational Quote</h2>
+
+      <p id="quote">
+        Loading quote...
+      </p>
+      <button id="quote-btn">Get a Quote</button>
+    </div>
+
+    <!-- PROGRESS SECTION -->
+    <div class="card progress-card">
+
+      <h2>Study Progress</h2>
+
+      <div class="progress-box">
+
+        <p>DSA</p>
+
+        <div class="progress-bar">
+          <div class="progress dsa"></div>
+        </div>
+
+      </div>
+
+      <div class="progress-box">
+
+        <p>Web Development</p>
+
+        <div class="progress-bar">
+          <div class="progress web"></div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
